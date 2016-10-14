@@ -4,7 +4,7 @@ function adminer_object() {
     include_once "./plugins/plugin.php";
 
     //get db host from environment
-    $db_host=explode(getenv(",","DATABASE_HOST"));
+    $db_host=explode(",",getenv("DATABASE_HOST"));
     // autoloader
     foreach (glob("plugins/*.php") as $filename) {
         include_once "./$filename";

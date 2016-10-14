@@ -16,6 +16,7 @@
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/login-servers.php && \
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/tables-filter.php && \
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/version-noverify.php && \
+  curl -sLO https://raw.github.com/vrana/adminer/master/plugins/json-column.php && \
   curl -sL http://www.adminer.org/latest.php -o /var/www/html/adminer.php && \
   curl -sL https://raw.githubusercontent.com/oondeo/docker-adminer/master/index.php -o /var/www/html/index.php && \
   curl -sL https://raw.github.com/vrana/adminer/master/designs/nette/adminer.css -o /var/www/html/adminer.css
