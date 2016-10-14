@@ -1,7 +1,6 @@
 #!/bin/sh
 
   mkdir -p /var/www/html/plugins && cd /var/www/html/plugins && \
-  apk add --update --no-cache curl && \
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/plugin.php && \
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/dump-xml.php && \
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/tinymce.php && \
@@ -18,4 +17,5 @@
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/tables-filter.php && \
   curl -sLO https://raw.github.com/vrana/adminer/master/plugins/version-noverify.php && \
   curl -sL http://www.adminer.org/latest.php -o /var/www/html/adminer.php && \
+  curl -sL https://raw.githubusercontent.com/oondeo/docker-adminer/master/index.php -o /var/www/html/index.php && \
   curl -sL https://raw.github.com/vrana/adminer/master/designs/nette/adminer.css -o /var/www/html/adminer.css
